@@ -1,0 +1,28 @@
+app-soap-tile img {
+  width: 383px;
+  height: 290px;
+  border: 1px solid black;
+}
+app-soap-tile .center {
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+}
+app-soap-tile .card-header {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+}
+app-soap-tile .card-footer {
+  background-color: transparent;
+  text-align: center;
+}
+app-soap-tile .tile {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+app-soap-tile .row {
+  margin-right: 0;
+  margin-left: 0;
+}
