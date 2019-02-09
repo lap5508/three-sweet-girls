@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormsModule } from '@angular/forms';
+import { TooltipModule } from 'ngx-bootstrap';
 
 // firebase
 import { FirebaseModule, FirebaseProvider } from 'angular-firebase';
@@ -14,15 +15,22 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 export const firebaseConfig = environment.firebaseConfig;
 
+// components
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SoapTileComponent } from './soap-tile/soap-tile.component';
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: HomePageComponent },
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent,
+    NavbarComponent,
+    SoapTileComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +40,7 @@ const appRoutes: Routes = [
       appRoutes
       // { enableTracing: true } // <-- debugging purposes only
     ),
+    TooltipModule.forRoot(),
     AngularFontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule.enablePersistence()
