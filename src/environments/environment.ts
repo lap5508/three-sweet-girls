@@ -6,12 +6,12 @@ export const environment = {
   production: false,
 
   firebaseConfig: {
-    apiKey: 'AIzaSyBGsB5SrHecHDUXdIu4iEIsXVj0QeSGnio',
-    authDomain: 'breadit-45c38.firebaseapp.com',
-    databaseURL: 'https://breadit-45c38.firebaseio.com',
-    projectId: 'breadit-45c38',
-    storageBucket: 'breadit-45c38.appspot.com',
-    messagingSenderId: '842711530087'
+    apiKey: 'AIzaSyC1nomtTmrq-rnVicpU-CMF3AJHKuxb9Rg',
+    authDomain: 'three-sweet-girls.firebaseapp.com',
+    databaseURL: 'https://three-sweet-girls.firebaseio.com',
+    projectId: 'three-sweet-girls',
+    storageBucket: 'three-sweet-girls.appspot.com',
+    messagingSenderId: '435733665217'
   }
 };
 
@@ -21,4 +21,4 @@ export const environment = {
  * import the following file, but please comment it out in production mode
  * because it will have performance impact when throw error
  */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+// import "zone.js/dist/zone-error";  // Included with Angular CLI.

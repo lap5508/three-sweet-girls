@@ -12,6 +12,7 @@ import { FirebaseModule, FirebaseProvider } from 'angular-firebase';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 export const firebaseConfig = environment.firebaseConfig;
 
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SoapTileComponent } from './soap-tile/soap-tile.component';
+import { SoapTileDetailComponent } from './soap-tile-detail/soap-tile-detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    SoapTileComponent
+    SoapTileComponent,
+    SoapTileDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ const appRoutes: Routes = [
     TooltipModule.forRoot(),
     AngularFontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule.enablePersistence()
+    AngularFirestoreModule.enablePersistence(),
+    AngularFireAuthModule
   ],
   providers: [
     FirebaseProvider
