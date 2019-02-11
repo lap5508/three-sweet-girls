@@ -1,6 +1,15 @@
 <!--<div *ngIf="user.uid | async as uid; else login">-->
-  <app-navbar></app-navbar>
   <div class="overlay"></div>
+  <app-navbar></app-navbar>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="header">
+        <h1 class="header-title">{{labelConstants.THREE_SWEET_GIRLS_IMAGE_HEADER}}</h1>
+        <h2 class="header-description">{{labelConstants.THREE_SWEET_GIRLS_IMAGE_HEADER_DESCRIPTION}}</h2>
+        <hr>
+      </div>
+    </div>
+  </div>
   <router-outlet></router-outlet>
 <!--</div>-->
 <ng-template #login>

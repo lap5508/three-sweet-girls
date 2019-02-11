@@ -28,7 +28,8 @@
               "src/assets/stylesheets/compiled/navbar.css",
               "src/assets/stylesheets/compiled/home-page.css",
               "src/assets/stylesheets/compiled/soap-tile.css",
-              "src/assets/stylesheets/compiled/styles.css"
+              "src/assets/stylesheets/compiled/styles.css",
+              "src/assets/stylesheets/compiled/soap-tile-detail.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

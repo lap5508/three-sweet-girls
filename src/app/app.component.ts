@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {UserService} from './user.service';
+import { UserService } from './user.service';
+import { HomePageConstants } from './home-page/home-page-constants.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import {UserService} from './user.service';
 export class AppComponent {
   title = 'user-service';
 
-  constructor(public user: UserService) {
+  constructor(public user: UserService, public labelConstants: HomePageConstants) {
     user.logout();
   }
 }

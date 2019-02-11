@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col-sm-12 soap-container">
     <div class="row">
       <div class="col-sm-4" *ngFor="let soapTile of soapTiles | async">
         <div class="tile">
           <div class="card-header center">
             <p>{{soapTile.name}}</p>
           </div>
-          <div class="card-img center">
+          <div (click)="onSelect(soapTile)" class="card-img center">
             <img src="{{soapTile.image}}">
           </div>
           <div class="card-footer center">

@@ -25,6 +25,7 @@ import { SoapTileDetailComponent } from './soap-tile-detail/soap-tile-detail.com
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
+  { path: 'detail/:soap', component: SoapTileDetailComponent },
 ];
 
 @NgModule({
