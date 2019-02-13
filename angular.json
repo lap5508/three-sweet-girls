@@ -29,7 +29,9 @@
               "src/assets/stylesheets/compiled/home-page.css",
               "src/assets/stylesheets/compiled/soap-tile.css",
               "src/assets/stylesheets/compiled/styles.css",
-              "src/assets/stylesheets/compiled/soap-tile-detail.css"
+              "src/assets/stylesheets/compiled/soap-tile-detail.css",
+              "src/assets/stylesheets/compiled/add-soap.css",
+              "src/assets/stylesheets/compiled/file-upload.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

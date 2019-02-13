@@ -1,0 +1,35 @@
+@import '../colors';
+app-file-upload {
+  .dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 200;
+    height: 300px;
+    border: 2px dashed @border-color;
+    border-radius: 5px;
+    background: white;
+    margin: 10px 0px 10px 20px;
+    padding: 5px;
+
+    &.hovering {
+      border: 2px solid @border-color;
+      color: @neutral;
+    }
+
+    .file-label {
+      font-size: 1.2em;
+    }
+  }
+
+  progress::-webkit-progress-value {
+    transition: width 0.1s ease;
+    margin: 10px 0px 10px 20px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+}

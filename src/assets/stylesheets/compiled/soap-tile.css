@@ -1,30 +1,37 @@
-app-soap-tile .soap-container {
-  background-color: rgba(255, 255, 255, 0.7) !important;
-  padding: 10px 5px;
+app-soap-tile .btn {
+  background-color: white;
+  margin-bottom: 5px;
 }
 app-soap-tile img {
   width: 383px;
   height: 290px !important;
   border: 1px solid black;
 }
-app-soap-tile .center {
-  margin: auto;
-  width: 85%;
-  padding: 10px;
-}
 app-soap-tile .card-header {
   background-color: transparent;
   text-align: center;
   font-size: 1.8rem;
 }
+app-soap-tile .card-img {
+  width: 70%;
+}
 app-soap-tile .card-footer {
   background-color: transparent;
   text-align: center;
+  width: 70%;
 }
 app-soap-tile .tile {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   margin-top: 5px;
+}
+app-soap-tile .shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 app-soap-tile .row {
   margin-right: 0;

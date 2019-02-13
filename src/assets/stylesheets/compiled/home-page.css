@@ -3,3 +3,6 @@ app-home-page .row {
   margin-right: 0;
   margin-bottom: 2px;
 }
+app-home-page .fill-width {
+  padding: 0 !important;
+}

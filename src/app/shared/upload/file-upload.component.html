@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="dropzone"
+         appDropZone
+         (hovered)="toggleHover($event)"
+         (dropped)="startUpload($event)"
+         [class.hovering]="isHovering">
+
+      <h3>Add Image...</h3>
+      <p>Drag and Drop an Image</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="file">
+      <label class="file-label">
+        <input type="file" (change)="startUpload($event.target.files)">
+        <span class="file-cta">
+            <span class="file-icon">
+              <i class="fa fa-upload"></i>
+            </span>
+          </span>
+      </label>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div *ngIf="percentage | async as pct">
+      <progress [value]="pct"></progress>
+    </div>
+  </div>
+</div>

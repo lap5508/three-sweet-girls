@@ -22,10 +22,15 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SoapTileComponent } from './soap-tile/soap-tile.component';
 import { SoapTileDetailComponent } from './soap-tile-detail/soap-tile-detail.component';
+import { AddSoapComponent } from './add-soap/add-soap.component';
+import { DropZoneDirective } from './Directives/drop-zone.directive';
+import { FileUploadComponent } from './shared/upload/file-upload.component';
+import {AngularFireStorage, AngularFireStorageModule} from '@angular/fire/storage';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'detail/:soap', component: SoapTileDetailComponent },
+  { path: 'add', component: AddSoapComponent }
 ];
 
 @NgModule({
@@ -34,7 +39,10 @@ const appRoutes: Routes = [
     HomePageComponent,
     NavbarComponent,
     SoapTileComponent,
-    SoapTileDetailComponent
+    SoapTileDetailComponent,
+    AddSoapComponent,
+    DropZoneDirective,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,8 @@ const appRoutes: Routes = [
     AngularFontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule.enablePersistence(),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [
     FirebaseProvider

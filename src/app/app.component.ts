@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from './user.service';
+import { UserService } from './shared/user/user.service';
 import { HomePageConstants } from './home-page/home-page-constants.model';
 
 @Component({
